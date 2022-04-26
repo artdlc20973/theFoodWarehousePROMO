@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Multiple Columns Hybrid</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<style type="text/css">
+			
+			/* CLIENT-SPECIFIC STYLES */
+			body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+			table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+			img { -ms-interpolation-mode: bicubic; }
+			
+			/* RESET STYLES */
+			img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+			table { border-collapse: collapse !important; }
+			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+			
+			/* iOS BLUE LINKS */
+			a[x-apple-data-detectors] {
+			    color: inherit !important;
+			    text-decoration: none !important;
+			    font-size: inherit !important;
+			    font-family: inherit !important;
+			    font-weight: inherit !important;
+			    line-height: inherit !important;
+			}
+			
+			/* GMAIL BLUE LINKS */
+			u + #body a {
+			    color: inherit;
+			    text-decoration: none;
+			    font-size: inherit;
+			    font-family: inherit;
+			    font-weight: inherit;
+			    line-height: inherit;
+			}
+			
+			/* SAMSUNG MAIL BLUE LINKS */
+			#MessageViewBody a {
+			    color: inherit;
+			    text-decoration: none;
+			    font-size: inherit;
+			    font-family: inherit;
+			    font-weight: inherit;
+			    line-height: inherit;
+			}
+
+			/* Universal styles for links and stuff */
+			a { color: #b6c9c7; font-weight: bold; }
+			a:hover { color: #ff6161; text-decoration: none; }
+			a.button:hover { background-color: #52d8e4 !important; }
+      
+			/* Responsive styles */
+			@media screen and (max-width: 600px) {
+				h1 { font-size: 24px !important; }
+				.mobile { max-width: 100% !important; width: 100% !important; }
+			}
+
+      /* interactive elements */
+      input {display: none;}
+      label {cursor: pointer;}
+      .slide {display: none;}
+      #slide1:checked ~ .slide1,
+      #slide2:checked ~ .slide2,
+      #slide3:checked ~ .slide3,
+      #slide4:checked ~ .slide4,
+      #slide5:checked ~ .slide5 {display: block;}
+
+
+		</style>
+	</head>
+	<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Preview text for the inbox -->
+    <div style="display: none;max-height: 0;overflow: hidden;">
+      This will be displayed underneath the subject line. Use it wisely.
+    </div>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+      <tr>
+        <td align="center">
+          <table border="0" class="mobile" cellpadding="0" cellspacing="0" width="600" role="presentation" style="background-color: #ffffff;color: #000000;font-family: sans-serif;font-size: 18px;line-height: 36px;margin: 0;padding: 0;">
+            <!-- LOGO -->
+            <tr>
+              <td align="center" style="padding: 20px;">
+                <a href="#"><img src="https://i.ibb.co/N38QZBw/art-Logo-Blue.png" width="300" border="0" style="border-radius: 25%;display: block;margin: 0 auto;" alt=""></a> 
+              </td>
+            </tr>
+            <!-- HEADLINE -->
+            <tr>
+              <td style="padding: 20px;">
+                <h1 style="margin: 0;font-size: 32px;text-align: center;">The Food Warehouse</h1>
+              </td>
+            </tr>
+            <!-- HERO IMAGE -->
+            <tr>
+              <td style="padding: 20px;">
+              <!-- triggers for switching content -->
+              <input type="radio" name="slides" id="slide1" checked>
+              <input type="radio" name="slides" id="slide2">
+              <input type="radio" name="slides" id="slide3">
+              <input type="radio" name="slides" id="slide4">
+              <input type="radio" name="slides" id="slide5">
+              
+              
+              <label for="slide1" class="slide-label" style="border: 2px solid black;display: inline-block;margin: 7px;padding: 4px 15px;">Burgers</label>
+              
+              <label for="slide2" class="slide-label" style="border: 2px solid black;display: inline-block;margin: 7px;padding: 4px 15px;">Steaks</label>
+              
+              <label for="slide3" class="slide-label" style="border: 2px solid black;display: inline-block;margin: 7px;padding: 4px 15px;">Salads</label>
+              
+              <label for="slide4" class="slide-label" style="border: 2px solid black;display: inline-block;margin: 7px;padding: 4px 15px;">Sushi</label>
+              
+              <label for="slide5" class="slide-label" style="border: 2px solid black;display: inline-block;margin: 7px;padding: 4px 15px;">Smoothie</label>
+
+              <div class="slide slide1" style="background-color: red;"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=999&q=80" alt="cheeseburger" border="0" style="border-radius: 6px;display: block;max-width: 100%;min-width: 100px;width: 100%;height: 400px;"></div>
+              <div class="slide slide2" style="background-color: blue;"><img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="steak" border="0" style="border-radius: 6px;display: block;max-width: 100%;min-width: 100px;width: 100%;height: 400px;"></div>
+              <div class="slide slide3" style="background-color: gold;"><img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80" alt="image of a salad" border="0" style="border-radius: 6px;display: block;max-width: 100%;min-width: 100px;width: 100%;height: 400px;"></div>
+              <div class="slide slide4" style="background-color: green;"><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="tuna sushi roll" border="0" style="border-radius: 6px;display: block;max-width: 100%;min-width: 100px;width: 100%;height: 400px;"></div>
+              <div class="slide slide5" style="background-color: purple;"><img src="https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="fruit smoothie" border="0" style="border-radius: 6px;display: block;max-width: 100%;min-width: 100px;width: 100%;height: 400px;"></div>
+              
+      
+              </td>
+            </tr>
+            <!-- BODY CONTENT -->
+            <tr>
+              <td style="padding: 20px;">
+                <P style="margin: 0 0 20px 0;">A <strong> hamburger</strong> (or burger for short) is a food consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll. Hamburgers are often served with cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup, mustard, mayonnaise, relish, or a "special sauce", often a variation of Thousand Island dressing; and are frequently placed on sesame seed buns. A hamburger topped with cheese is called a cheeseburger.</P>
+                <P style="margin: 0 0 20px 0;">Garden <strong> salad </strong> use a base of leafy greens such as lettuce, arugula/rocket, kale or spinach; they are common enough that the word salad alone often refers specifically to garden salads. Other types include bean salad, tuna salad, fattoush, Greek salad (vegetable-based, but without leafy greens), and sōmen salad (a noodle-based salad).</P>
+                <P style="margin: 0 0 20px 0;">A <strong> steak</strong>, also sometimes called "beef steak", is a meat generally sliced across the muscle fibers, potentially including a bone. It is normally grilled, though it can also be pan-fried. Steak can also be cooked in sauce, such as in steak and kidney pie, or minced and formed into patties, such as hamburgers.</P>
+                <P style="margin: 0 0 20px 0;">The inventor of modern <strong>sushi</strong> is believed to be Hanaya Yohei, who invented nigiri-zushi, a type of sushi most known today, in which seafood is placed on hand-pressed vinegared rice, around 1824 in the Edo period (1603－1867). It was the fast food of the chōnin class in the Edo period.</P>
+                <P style="margin: 0 0 20px 0;">A <strong>smoothie</strong> or smoothy is a beverage made by puréeing fruits and/or vegetables in a blender. A smoothie often has a liquid base such as fruit juice, or dairy products such as milk, yogurt, ice cream or cottage cheese. Other ingredients are often added, including non-dairy milk, crushed ice, sweeteners (honey or sugar), vinegar, whey powder, chocolate or nutritional supplements.</P>
+              </td>
+            </tr>
+            <!-- BUTTON -->
+            <tr>
+              <td style="padding: 20px 0 60px 0;">
+                <!-- CTA generated by buttons.com -->
+                <div style="text-align: center;"><!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://artdelacruz2.com" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" strokecolor="#ff6161" fillcolor="#ff6161">
+                    <w:anchorlock/>
+                    <center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">The Food Warehouse</center>
+                  </v:roundrect>
+                <![endif]--><a href="https://artdelacruz2.com"
+                style="background-color:#ff6161;border:1px solid #ff6161;border-radius:4px;color:#000000;display:inline-block; letter-spacing: 2px;word-spacing: 2px;padding: 12px 40px; font-family:sans-serif;font-size:17px;font-weight:bold;line-height:30px;text-align:center;text-decoration:none;width:225px;-webkit-text-size-adjust:none;mso-hide:all;" target="_blank"> 15% OFF The Food Warehouse</a></div>
+                <!--[if mso]>
+                </center>
+                </v:roundrect>
+                <![endif]-->
+              </div>
+              </td>
+            </tr>
+            <!-- Footer info: Always include unsub link! -->
+            <tr>
+              <td style="color: #ff6161;font-size: 16px;margin: 60px 0 0 0;padding: 4em 20px;">
+                <p style="text-align: center;"><img src="https://i.ibb.co/N38QZBw/art-Logo-Blue.png" alt="arts html email logo" ></p>
+                <p style="margin: 0 0 20px 0;">You're receiving this email because you love eating great food!! Good for you. Don't worry, <a href="https://example.com" target="_blank"> you can unsubscribe here </a>if you'd like.</p>
+                <p style="margin: 0 0 20px 0;">Email Sender - 12345 Any Street, City, State 90210</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+	</body>
+</html>
+
+
+
+
+
+
